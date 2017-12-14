@@ -30,6 +30,7 @@ percentage_of_1s <- sapply(qual_vars, per_func)
 options(scipen = 999)
 qual_var_results <- data.frame(count, nums, percentage_of_1s)
 write.csv(qual_var_results, file = "C:/Users/csuehs/Dropbox/PECTUS-cluster/total_population_centrality/Table_1a_Totalpop_percentages.csv")
+write.csv2(qual_var_results, file = "C:/Users/csuehs/Dropbox/PECTUS-cluster/total_population_centrality/Table_1a_Totalpop_percentages_csv2.csv")
 
 #________quantitative variables: get min, max, mean, sd, median, iqrange________
 
@@ -68,4 +69,5 @@ quant_var_results <- data.frame(count, minimum, maximum, mean,
                      st_d, median, quartile_25p, quartile_75p, shapiro_p)
 
 write.csv(quant_var_results, file = "C:/Users/csuehs/Dropbox/PECTUS-cluster/total_population_centrality/Table_1b_total_population_centrality.csv")
+write.csv2(quant_var_results, file = "C:/Users/csuehs/Dropbox/PECTUS-cluster/total_population_centrality/Table_1b_total_population_centrality_csv2.csv")
 
