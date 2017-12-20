@@ -48,6 +48,8 @@ quant_vars <- data.frame(raw_data$bmi,
                          raw_data$fev1.fvc,
                          raw_data$frc)
 
+quant_vars$raw_data.fvc <- quant_vars$raw_data.fvc *100
+quant_vars$raw_data.tlc <- quant_vars$raw_data.tlc *100
 
 quartile_1 <- function(x) {quantile(x, probs = seq(0,1,0.25), na.rm = TRUE)[2]}
 quartile_3 <- function(x) {quantile(x, probs = seq(0,1,0.25), na.rm = TRUE)[4]}
